@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#Portfolio">Interests</a>
+        <a href="#credentials">Credentials</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -50,7 +51,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="assets/Images/software-engineers-vector.png">
+                <img src="assets/images/software-engineers-vector.png">
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About me</h1>
@@ -110,6 +111,36 @@
     </div>
 </section>
 
+
+<!-- ---------------------credentials------------------------ -->
+<section class="credentials"  id="credentials">
+    <h1 class="title">Credentials</h1>
+    <div class="slider">
+       <div class="slide">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+
+
+        <div class="st first">
+            <img src="assets/Images/Capture.JPG" alt="">
+           </div>
+           <div class="st">
+            <img src="assets/Images/sqludemy.jpg" alt="">
+           </div>
+    
+           <div class="nav-auto">
+            <div class="a-b1"></div>
+            <div class="a-b2"></div>
+           </div>
+    
+           <div class="nav-m">
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio2" class="m-btn"></label>
+           </div>
+
+       </div>
+    </div>
+</section>
 <!-- ---------contact section---------- -->
 
 <section class="contact" id="contact">
@@ -141,6 +172,10 @@
         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
 </footer>
+
+<!-- -----------scroll reveal-------------- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
     var tabcontents=document.getElementsByClassName("tab-contents");

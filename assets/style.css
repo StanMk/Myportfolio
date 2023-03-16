@@ -267,9 +267,109 @@ padding-top: 270px;
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
+
+/* --------------credentials------------------ */
+.credentials{
+    /* margin: 0;
+    padding: 0; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    padding-bottom: 600px;
+    padding-top: 400px;
+}
+.credentials .title{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 6rem;
+    margin-top: -400px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-top: 250px;
+    padding-bottom: 7rem;
+    align-items: center;
+    position: absolute;
+}
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 800px;
+    height: 500px;
+}
+
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px var(--main-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn :not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: var(--main-color);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display:none;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 6px var(--main-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: var(--main-color);
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: var(--main-color);
+}
 /* ----------contactus------------ */
 .contact{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     padding-bottom: 210px;
     padding : 120px 0;
     padding-top: 100px;
@@ -547,6 +647,31 @@ transform: translateY(-5px);
         padding-top: 100px;
         padding-bottom: 7rem;
     }
+    .credentials .title{
+        color: var(--main-color);
+        text-align: center;
+        font-size: 6rem;
+        margin-top: -400px;
+        margin-left: 40px;
+        position: absolute;
+    }
+    
+    .slider{
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 5px;
+        margin-top: 250px;
+        padding-bottom: 7rem;
+        align-items: center;
+        position: absolute;
+    }
+    .st img{
+        width: 500px;
+        height: 300px;
+    }
+    
 }
 
     /* -------------617px------------- */
@@ -817,7 +942,35 @@ transform: translateY(-5px);
         color: var(--second-bg-color);
     
     }
+    .credentials .title{
+        color: var(--main-color);
+        text-align: center;
+        font-size: 6rem;
+        margin-top: -400px;
+        margin-left: 10px;
+        position: absolute;
+    }
     
+    .slider{
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 5px;
+        margin-top: 250px;
+        padding-bottom: 7rem;
+        align-items: center;
+        position: absolute;
+    }
+    .st img{
+        width: 350px;
+        height: 200px;
+    }
+    .contact{
+        background-color: var(--bg-color);
+    }
+    
+   
  }
 
  /* -----------393px------------------------- */

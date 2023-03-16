@@ -41,6 +41,32 @@ navbar.classList.remove('active');
 
 };
 
+//slideshow
+
+var counter=1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked=true;
+    counter++;
+if(counter >2)
+{
+    counter=1;
+}
+},5000)
+
+
+// ------------scroll reveal----------
+ScrollReveal({
+     reset: true,
+     distance : '80px',
+     duration : 2000,
+     delay : 200
+    });
+
+    ScrollReveal().reveal('.home-content, .heading, .subtitle, .credentials .title', { origin: 'top' });
+    ScrollReveal().reveal('.home-img, .slider, .Portfolio-box, .contact-right img, .about-col-1 img', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1,.contact-left p,.contact-left p i,.contact-left p span,.social-icons', { origin: 'left'});
+    ScrollReveal().reveal('.about-col-2', { origin: 'right'});
+
 
 
 
