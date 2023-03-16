@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- -----boxicons----- -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- ------customcss------- -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- ---header ddesign---- -->
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#Portfolio">Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<!-- -------homesection design------------ -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, Its Me</h3>
+        <h1>Manoj Kumar</h1>
+        <h3>And I'm a <span>Software Engineer</span></h3>
+        <div class="social-media">
+            <a href=""><i class='bx bxl-instagram' ></i></a>
+            <a href=""><i class='bx bxl-linkedin' ></i></a>
+            <a href=""><i class='bx bxl-facebook-square' ></i></a>
+        </div>
+        <a href="assets/Images/Resume.docx" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <!-- <img src="Images/download.png" alt=""> -->
+    </div>
+</section>
+
+
+<!-- -----about section esign----- -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/images/software-engineers-vector.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About me</h1>
+                <p class="about-content"></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Backend Development<br><span>ASP.Net, MVC Frameork, SQL, T-SQL</span></li>
+                        <li>Frontend Development<br><span>HTML5, CSS, ReactJs</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>2020-Present<br><span>Software Engineer at LTIMindtree </span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>2016-2020<br><span>B.Tech(Information Techology) Graduated from Kumaraguru college of Technology </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ------Interests------ -->
+<section class="Portfolio" id="Portfolio">
+    <h1 class="heading">Interests</h1>
+    <div class="Portfolio-container" id="Portfolio">
+        <div class="Portfolio-box">
+            <img src="assets/Images/music.jpg" alt="">
+            <div class="Portfolio-layer">
+                <h4>Music</h4>
+                <p>Music is my soul's language, a rhythm that beats within me. Its melodies and lyrics inspire me 
+                    to express my deepest emotions and connect with others on a profound level.</p>
+            </div>
+        </div>
+        <div class="Portfolio-box">
+            <img src="assets/Images/Game.jpg" alt="">
+            <div class="Portfolio-layer">
+                <h4>Gaming</h4>
+                <p>Gaming is not just a hobby it's a passion that ignites a fire within me.The thrill,rush and the accomplishments 
+                    after winning a game are some of the things that keep me hooked.</p>
+            </div>
+        </div>
+        <div class="Portfolio-box">
+            <img src="assets/Images/Cinema.jpg" alt="">
+            <div class="Portfolio-layer">
+                <h4>Movies</h4>
+                <p>Watching movies is not just a pastime for me,it's an escape to different worlds and experience a range of emotions.I personally consider movies are the highest peak of creativity of a human</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ---------contact section---------- -->
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="heading">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i><span>manojkumar19699@gmail.com</span></p>
+                <p><i class='bx bx-phone-incoming'></i><span>9952616330</span</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                </div>
+                <div class="contact-right">
+                    <img src="assets/Images/contactus.jpg">
+                 </div>
+                
+        </div>
+    </div>
+</section>
+<!-- ---------------footer----------- -->
+<footer class="footer">
+    <div class="footer-text">
+       <p>Copyright &copy; 2023 by Manoj Kumar | All rights reserved</p> 
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  
+</script>
+
+<script src="assets/js/script.js"></script>
+    
+</body>
+</html>
